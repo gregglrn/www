@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.calendar {
+    max-width: 900px; /* Increase the width as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px; /* Adjust padding for spacing */
+    margin: 20px auto; /* Add margin to separate from content above */
+}
+
+/* Enlarged styles for calendar elements */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Increase margin for spacing */
+}
+
+#monthYear {
+    font-size: 24px; /* Increase font size for better visibility */
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Increase font size for button */
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px; /* Increase gap for better spacing */
+}
+
+.day {
+    text-align: center;
+    padding: 15px; /* Increase padding for day elements */
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 18px; /* Increase font size for day */
+}
+
+

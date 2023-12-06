@@ -1,0 +1,186 @@
+header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header button {
+    background-color: #fff;
+    color: #ff0000;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.time {
+    font-size: 18px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+a {
+color: #ff0000;
+text-decoration: none;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.calendar {
+max-width: 300px;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+}
+
+#monthYear {
+font-size: 1.5em;
+}
+
+button {
+background-color: transparent;
+border: none;
+cursor: pointer;
+font-size: 1.2em;
+}
+
+.days {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+gap: 5px;
+}
+
+.day {
+text-align: center;
+padding: 5px;
+cursor: pointer;
+border: 1px solid #ccc;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+h1 {
+
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Styles for the work hours form */
+.work-hours-form {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.work-hours-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.work-hours-form label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.work-hours-form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.work-hours-form button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.work-hours-form button:hover {
+    background-color: #990000;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .work-hours-form {
+        max-width: 90%;
+    }
+}
