@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPFL - Gestion des heures</title>
+    <link rel="stylesheet" href="../../CSS/Calendar/Calendar2.css">
+    <link rel="stylesheet" href="../../CSS/Calendar/Calendar.css">
+</head>
+<body>
+    <header>
+        <img src="../../img/epfllogo.png" alt="EPFL Logo">
+        <link rel="stylesheet" href="/CSS/Timbreuse/timbreuse.css">
+    </header>
+    
+    <main>
+        <h1>Gestion des heures</h1>
+        <p class="time" id="dateTime"></p>
+
+
+<form action="../../PHP/timbreuse/timbreuse.php" method="post">
+  <input type="text" id="chronoInput" value="00:00:00" readonly>
+</form>
+
+<button id="startPauseButton">Start</button>
+<button id="endButton">End</button>
+<p>
+<a href="../../PHP/Calendar/Calendar.php">Entrer les heures manuellement</a>
+</p>
+<script src="../../JS/Timbreuse/timer.js"></script>
+<script src="../../JS/Timbreuse/homedate&heure.js"></script>
+</body>
+</html>
