@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modal Login</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  .modal.show {
+    display: block;
+  }
+  .button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<button class="button" id="openModalBtn">Ouvrir la fenêtre modale</button>
+<div class="modal" id="loginModal">
+  <h2>Se connecter</h2>
+  <form>
+    <label for="username">Nom d'utilisateur:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="password">Mot de passe:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <button type="submit">Se connecter</button>
+  </form>
+</div>
+<script>
+  const openModalBtn = document.getElementById('openModalBtn');
+  const loginModal = document.getElementById('loginModal');
+
+  openModalBtn.addEventListener('click', () => {
+    loginModal.classList.add('show');
+  });
+
+  loginModal.addEventListener('click', (event) => {
+    if (event.target === loginModal) {
+      loginModal.classList.remove('show');
+    }
+  });
+</script>
+</body>
+</html>
